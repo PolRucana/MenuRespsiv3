@@ -9,7 +9,7 @@
 header{
     position: fixed;
     width: 100%;
-    background: black;
+    background: rgba(0, 0, 0,0.8);
     color: white;
     display: flex;
     align-items: center;
@@ -24,7 +24,12 @@ header{
 }
 
 .logo img{
+    box-sizing: content-box;
     width: 38px;
+    background: white;
+    border-radius: 50px;
+    padding: 3px;
+    
 }
 .logo h1{
 
@@ -111,4 +116,35 @@ nav ul li a:hover{
         left: 0;
         transition: all 0.5s;
     }
+}
+
+.fondo{
+    background-image: url(png/imgligero.jpeg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo h1{
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 30px;
+    padding: 5px 20px;
+    margin-top: 50px;
+}
+
+.fondo h3{
+    background: rgb(255, 255, 255, 0.7);
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    border-radius: 5px;
+
 }
